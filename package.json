@@ -1,0 +1,12 @@
+{
+  "name": "fusion-studio-prebuild",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ccheraa/fusion-studio-prebuild.git",
+  "author": "Charafeddine Cheraa <ccheraa@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "drivelist": "9.2.2",
+    "prebuild": "^10.0.1"
+  }
+}
