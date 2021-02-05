@@ -1,15 +1,15 @@
 const build = require('./build');
-const { updatePackageJson: updatePackagejson, getModules} = require('./modules');
+const { updatePackageJson, getModules} = require('./modules');
 
 function buildPackages() {
   build().then(console.log);
 }
-function getModules() {
-  modules()
+function doGetModules() {
+  getModules()
     .then(console.log).catch(err => console.log('ERROR:', err));
 }
-function updatePackage() {
-  updatePackagejson()
+function doUpdatePackageJson() {
+  updatePackageJson()
     .then(console.log).catch(err => console.log('ERROR:', err));
 }
 buildPackages();
