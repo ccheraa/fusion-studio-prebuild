@@ -24,9 +24,6 @@ function prebuildPackage(package, done) {
 
   console.log('building "' + package + '"...');
   const packageDirname = pkg.name.split('/').pop();
-  console.log(pkg);
-  console.log(packageDirname);
-  console.log(join(basePath, 'prebuild', packageDirname));
   mkdir(join(basePath, 'prebuild', packageDirname));
   mkdir(join(basePath, 'prebuild', packageDirname, 'v' + pkg.version));
   forEachSeries(options.prebuild, function (entry, next) {
